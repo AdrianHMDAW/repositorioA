@@ -2,7 +2,7 @@
 session_start();
 
 // Lista de palabras para el juego
-$palabras = ['elefante', 'jirafa', 'hipopotamo', 'rinoceronte', 'cocodrilo', 'camello', 'chimpance'];
+$palabras = ['elefante', 'jirafa', 'hipopotamo', 'rinoceronte', 'cocodrilo', 'camello', 'chimpance','leon','toro'];
 
 // Inicializar el juego
 if (!isset($_SESSION['palabra'])) {
@@ -54,6 +54,7 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Ahorcado</title>
 </head>
 <body>
